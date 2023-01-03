@@ -1,0 +1,5 @@
+verilog work "../../Phase 1 Logic Project Files/project/files/adder.v"
+verilog work "../../Phase 1 Logic Project Files/project/files/multiply.v"
+verilog work "../../Phase 1 Logic Project Files/project/temperatureCalculator.v"
+verilog work "../../Phase 1 Logic Project Files/project/temperatureAnalyzer.v"
+verilog work "../../Phase 1 Logic Project Files/project/temperatureAbnormalityDetector.v"

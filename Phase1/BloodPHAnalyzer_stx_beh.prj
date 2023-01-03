@@ -1,0 +1,4 @@
+verilog isim_temp "../Sources/azm4.v"
+verilog isim_temp "../Sources/decoder.v"
+verilog isim_temp "../Sources/bloodPHAnalyzer.v"
+verilog isim_temp "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

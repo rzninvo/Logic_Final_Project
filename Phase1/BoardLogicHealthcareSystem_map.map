@@ -1,0 +1,108 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'BoardLogicHealthcareSystem'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o BoardLogicHealthcareSystem_map.ncd BoardLogicHealthcareSystem.ngd
+BoardLogicHealthcareSystem.pcf 
+Target Device  : xc7a100t
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : artix7 -- $Revision: 1.55 $
+Mapped Date    : Mon Jan 27 15:50:04 2020
+
+WARNING:LIT:701 - PAD symbol "clk" has an undefined IOSTANDARD.
+Mapping design into LUTs...
+ERROR:MapLib:30 - LOC constraint P184 on clk is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P183 on dipsu<7> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P182 on dipsu<6> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P181 on dipsu<5> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P180 on dipsu<4> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P178 on dipsu<3> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P176 on dipsu<2> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P175 on dipsu<1> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P172 on dipsu<0> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P168 on dipsd<5> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P167 on dipsd<4> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P166 on dipsd<3> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P162 on dipsd<1> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P161 on dipsd<0> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P187 on btns<1> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P185 on btns<0> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P51 on ledu<7> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P50 on ledu<6> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P48 on ledu<5> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P46 on ledu<4> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P45 on ledu<3> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P44 on ledu<2> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P43 on ledu<1> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P42 on ledu<0> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P71 on ledd<7> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P68 on ledd<6> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P67 on ledd<5> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P65 on ledd<4> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P64 on ledd<3> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P63 on ledd<2> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P62 on ledd<1> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P61 on ledd<0> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P165 on dipsd<2> is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P189 on btns<2> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+
+Error found in mapping process, exiting...
+Errors found during the mapping phase.  Please see map report file for more
+details.  Output files will not be written.
+
+Design Summary
+--------------
+Number of errors   :  34
+Number of warnings :   1

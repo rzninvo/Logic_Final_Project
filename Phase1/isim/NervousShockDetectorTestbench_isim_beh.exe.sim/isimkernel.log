@@ -1,0 +1,28 @@
+Command line:
+   NervousShockDetectorTestbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64280
+
+Mon Jan 27 15:24:26 2020
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5336.21 Meg
+
+ Total Signals          : 16
+ Total Nets             : 17
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 13
+ Total Traceable Variables  : 40
+ Total Scalar Nets and Variables : 196
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 5178.93 Meg
+
+Mon Jan 27 15:26:03 2020
+

@@ -1,0 +1,43 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = P184;
+
+NET "btns[2]" LOC = P189;
+NET "btns[1]" LOC = P187;
+NET "btns[0]" LOC = P185;
+
+NET "dipsd[0]" LOC = P161;
+NET "dipsd[1]" LOC = P162;
+NET "dipsd[2]" LOC = P165;
+NET "dipsd[3]" LOC = P166;
+NET "dipsd[4]" LOC = P167;
+NET "dipsd[5]" LOC = P168;
+
+
+NET "dipsu[0]" LOC = P172;
+NET "dipsu[1]" LOC = P175;
+NET "dipsu[2]" LOC = P176;
+NET "dipsu[3]" LOC = P178;
+NET "dipsu[4]" LOC = P180;
+NET "dipsu[5]" LOC = P181;
+NET "dipsu[6]" LOC = P182;
+NET "dipsu[7]" LOC = P183;
+
+NET "ledu[0]" LOC = P42;
+NET "ledu[1]" LOC = P43;
+NET "ledu[2]" LOC = P44;
+NET "ledu[3]" LOC = P45;
+NET "ledu[4]" LOC = P46;
+NET "ledu[5]" LOC = P48;
+NET "ledu[6]" LOC = P50;
+NET "ledu[7]" LOC = P51;
+
+NET "ledd[0]" LOC = P61;
+NET "ledd[1]" LOC = P62;
+NET "ledd[2]" LOC = P63;
+NET "ledd[3]" LOC = P64;
+NET "ledd[4]" LOC = P65;
+NET "ledd[5]" LOC = P67;
+NET "ledd[6]" LOC = P68;
+NET "ledd[7]" LOC = P71;

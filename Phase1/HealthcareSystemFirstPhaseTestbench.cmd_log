@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Phase1 Logic Project/Phase1/HealthcareSystemFirstPhaseTestbench.xst" -ofn "D:/Phase1 Logic Project/Phase1/HealthcareSystemFirstPhaseTestbench.syr" 

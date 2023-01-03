@@ -1,0 +1,4 @@
+verilog work "../Sources/Register7Bit.v"
+verilog work "../Sources/InformationController.v"
+verilog work "../Sources/ConfigurationUnit.v"
+verilog work "../Sources/TestBenches/ConfigurationTestbench.v"

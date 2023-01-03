@@ -1,0 +1,4 @@
+verilog isim_temp "../Sources/azm6.v"
+verilog isim_temp "../Sources/azm6_8bit.v"
+verilog isim_temp "azm8-tb.v"
+verilog isim_temp "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,6 @@
+verilog work "../Sources/azm4.v"
+verilog work "../Sources/mux.v"
+verilog work "../Sources/decoder.v"
+verilog work "../Sources/bloodTypeClassification.v"
+verilog work "../Sources/bloodPHAnalyzer.v"
+verilog work "../Sources/bloodAbnormalityDetector.v"

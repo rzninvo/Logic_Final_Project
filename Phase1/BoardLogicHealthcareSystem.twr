@@ -1,0 +1,151 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml BoardLogicHealthcareSystem.twx
+BoardLogicHealthcareSystem.ncd -o BoardLogicHealthcareSystem.twr
+BoardLogicHealthcareSystem.pcf -ucf BloodAbnormalityDetector.ucf
+
+Design file:              BoardLogicHealthcareSystem.ncd
+Physical constraint file: BoardLogicHealthcareSystem.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+btns<1>     |   -0.414(R)|      FAST  |    2.279(R)|      SLOW  |ledd_7_OBUF_BUFG  |   0.000|
+dipsd<1>    |   -0.386(R)|      FAST  |    2.256(R)|      SLOW  |ledd_7_OBUF_BUFG  |   0.000|
+dipsu<0>    |   -0.493(R)|      FAST  |    2.391(R)|      SLOW  |ledd_7_OBUF_BUFG  |   0.000|
+dipsu<1>    |   -0.236(R)|      FAST  |    2.165(R)|      SLOW  |ledd_7_OBUF_BUFG  |   0.000|
+dipsu<2>    |   -0.314(R)|      FAST  |    2.278(R)|      SLOW  |ledd_7_OBUF_BUFG  |   0.000|
+dipsu<3>    |   -0.242(R)|      FAST  |    2.186(R)|      SLOW  |ledd_7_OBUF_BUFG  |   0.000|
+dipsu<4>    |   -0.432(R)|      FAST  |    2.430(R)|      SLOW  |ledd_7_OBUF_BUFG  |   0.000|
+dipsu<5>    |   -0.365(R)|      FAST  |    2.249(R)|      SLOW  |ledd_7_OBUF_BUFG  |   0.000|
+dipsu<6>    |   -0.338(R)|      FAST  |    2.280(R)|      SLOW  |ledd_7_OBUF_BUFG  |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+ledd<0>     |         8.522(R)|      SLOW  |         3.427(R)|      FAST  |ledd_7_OBUF_BUFG  |   0.000|
+ledd<1>     |         8.140(R)|      SLOW  |         3.295(R)|      FAST  |ledd_7_OBUF_BUFG  |   0.000|
+ledd<2>     |         8.439(R)|      SLOW  |         3.444(R)|      FAST  |ledd_7_OBUF_BUFG  |   0.000|
+ledd<3>     |         8.080(R)|      SLOW  |         3.277(R)|      FAST  |ledd_7_OBUF_BUFG  |   0.000|
+ledd<4>     |         8.601(R)|      SLOW  |         3.436(R)|      FAST  |ledd_7_OBUF_BUFG  |   0.000|
+ledd<5>     |         8.311(R)|      SLOW  |         3.460(R)|      FAST  |ledd_7_OBUF_BUFG  |   0.000|
+ledd<6>     |         8.225(R)|      SLOW  |         3.268(R)|      FAST  |ledd_7_OBUF_BUFG  |   0.000|
+ledu<1>     |         8.702(R)|      SLOW  |         3.510(R)|      FAST  |ledd_7_OBUF_BUFG  |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock btns<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btns<0>        |         |         |    0.725|    0.725|
+clk            |         |         |    2.917|         |
+dipsd<0>       |         |         |    0.439|    0.439|
+dipsu<7>       |         |         |    1.112|    1.112|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btns<0>        |         |    0.639|         |         |
+clk            |    0.938|         |         |         |
+dipsd<0>       |         |    0.639|         |         |
+dipsu<7>       |         |    0.639|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock dipsd<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btns<0>        |         |         |    0.482|    0.482|
+clk            |         |         |    3.368|         |
+dipsd<0>       |         |         |    0.250|    0.250|
+dipsu<7>       |         |         |    0.869|    0.869|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock dipsu<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btns<0>        |         |         |    0.082|    0.082|
+clk            |         |         |    2.917|         |
+dipsd<0>       |         |         |   -0.063|   -0.063|
+dipsu<7>       |         |         |    0.413|    0.413|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk            |ledd<7>        |    4.454|
+dipsd<3>       |ledd<0>        |    5.338|
+dipsd<3>       |ledd<1>        |    5.066|
+dipsd<3>       |ledd<2>        |    5.674|
+dipsd<3>       |ledd<3>        |    5.448|
+dipsd<3>       |ledd<4>        |    5.627|
+dipsd<3>       |ledd<5>        |    5.428|
+dipsd<3>       |ledd<6>        |    5.275|
+dipsd<4>       |ledu<0>        |    5.074|
+dipsd<5>       |ledu<3>        |    6.516|
+dipsu<0>       |ledu<3>        |    9.244|
+dipsu<1>       |ledu<3>        |    9.280|
+dipsu<2>       |ledu<3>        |    9.069|
+dipsu<3>       |ledu<2>        |    5.850|
+dipsu<3>       |ledu<3>        |    8.923|
+dipsu<4>       |ledu<2>        |    6.052|
+dipsu<4>       |ledu<3>        |    9.123|
+dipsu<5>       |ledu<2>        |    6.192|
+dipsu<5>       |ledu<3>        |    9.478|
+dipsu<6>       |ledu<2>        |    6.237|
+dipsu<6>       |ledu<3>        |    9.834|
+dipsu<7>       |ledu<2>        |    6.103|
+dipsu<7>       |ledu<3>        |    9.064|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Jan 27 15:41:52 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5000 MB
+
+
+

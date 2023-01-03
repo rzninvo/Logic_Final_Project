@@ -1,0 +1,4 @@
+verilog work "../Sources/azm6.v"
+verilog work "../Sources/azm6_8bit.v"
+verilog work "azm8-tb.v"
+verilog work "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

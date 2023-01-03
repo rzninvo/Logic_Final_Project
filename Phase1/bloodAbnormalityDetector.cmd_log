@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/Phase1 Logic Project/Phase1/bloodAbnormalityDetector.xst" -ofn "D:/Phase1 Logic Project/Phase1/bloodAbnormalityDetector.syr" 
+xst -intstyle ise -ifn "D:/Phase1 Logic Project/Phase1/BloodAbnormalityDetector.xst" -ofn "D:/Phase1 Logic Project/Phase1/BloodAbnormalityDetector.syr" 
+xst -intstyle ise -ifn "D:/Phase1 Logic Project/Phase1/BloodAbnormalityDetector.xst" -ofn "D:/Phase1 Logic Project/Phase1/BloodAbnormalityDetector.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "D:/Phase1 Logic Project/Logic/BoardLogicHealthcareSystem.ucf" -uc BloodAbnormalityDetector.ucf -p xc7a100t-csg324-3 "BloodAbnormalityDetector.ngc" BloodAbnormalityDetector.ngd  

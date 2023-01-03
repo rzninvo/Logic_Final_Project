@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.xst" -ofn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.syr" 
+xst -intstyle ise -ifn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.xst" -ofn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.syr" 
+xst -intstyle ise -ifn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.xst" -ofn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.syr" 
+xst -intstyle ise -ifn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.xst" -ofn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.syr" 
+xst -intstyle ise -ifn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.xst" -ofn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.syr" 
+xst -intstyle ise -ifn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.xst" -ofn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BloodAbnormalityDetector.ucf -p xc7a100t-csg324-3 "BoardLogicHealthcareSystem.ngc" BoardLogicHealthcareSystem.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BoardLogicHealthcareSystem_map.ncd BoardLogicHealthcareSystem.ngd BoardLogicHealthcareSystem.pcf 
+par -w -intstyle ise -ol high -mt off BoardLogicHealthcareSystem_map.ncd BoardLogicHealthcareSystem.ncd BoardLogicHealthcareSystem.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BoardLogicHealthcareSystem.twx BoardLogicHealthcareSystem.ncd -o BoardLogicHealthcareSystem.twr BoardLogicHealthcareSystem.pcf -ucf BloodAbnormalityDetector.ucf 
+bitgen -intstyle ise -f BoardLogicHealthcareSystem.ut BoardLogicHealthcareSystem.ncd 
+xst -intstyle ise -ifn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.xst" -ofn "D:/Phase1 Logic Project/Phase1/BoardLogicHealthcareSystem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BloodAbnormalityDetector.ucf -uc "D:/Phase1 Logic Project/Logic/BoardLogicHealthcareSystem.ucf" -p xc7a100t-csg324-3 "BoardLogicHealthcareSystem.ngc" BoardLogicHealthcareSystem.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BoardLogicHealthcareSystem_map.ncd BoardLogicHealthcareSystem.ngd BoardLogicHealthcareSystem.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "D:/Phase1 Logic Project/Logic/BoardLogicHealthcareSystem.ucf" -uc BloodAbnormalityDetector.ucf -p xc7a100t-csg324-3 "BoardLogicHealthcareSystem.ngc" BoardLogicHealthcareSystem.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BoardLogicHealthcareSystem_map.ncd BoardLogicHealthcareSystem.ngd BoardLogicHealthcareSystem.pcf 

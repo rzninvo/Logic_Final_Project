@@ -1,0 +1,342 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: BloodAbnormalityDetector.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BloodAbnormalityDetector.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BloodAbnormalityDetector"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : BloodAbnormalityDetector
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Phase1 Logic Project\Sources\azm4.v" into library work
+Parsing module <azm4>.
+Analyzing Verilog file "D:\Phase1 Logic Project\Sources\mux.v" into library work
+Parsing module <mux>.
+Analyzing Verilog file "D:\Phase1 Logic Project\Sources\decoder.v" into library work
+Parsing module <decoder>.
+Analyzing Verilog file "D:\Phase1 Logic Project\Sources\bloodTypeClassification.v" into library work
+Parsing module <BloodTypeClassification>.
+Analyzing Verilog file "D:\Phase1 Logic Project\Sources\bloodPHAnalyzer.v" into library work
+Parsing module <BloodPHAnalyzer>.
+Analyzing Verilog file "D:\Phase1 Logic Project\Sources\bloodAbnormalityDetector.v" into library work
+Parsing module <BloodAbnormalityDetector>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <BloodAbnormalityDetector>.
+
+Elaborating module <BloodPHAnalyzer>.
+
+Elaborating module <decoder>.
+
+Elaborating module <azm4>.
+WARNING:HDLCompiler:189 - "D:\Phase1 Logic Project\Sources\bloodPHAnalyzer.v" Line 40: Size mismatch in connection of port <EN>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+Elaborating module <BloodTypeClassification>.
+
+Elaborating module <mux>.
+WARNING:HDLCompiler:189 - "D:\Phase1 Logic Project\Sources\bloodTypeClassification.v" Line 28: Size mismatch in connection of port <a>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\Phase1 Logic Project\Sources\bloodTypeClassification.v" Line 28: Assignment to out ignored, since the identifier is never used
+WARNING:Xst:2972 - "D:\Phase1 Logic Project\Sources\bloodTypeClassification.v" line 28. All outputs of instance <mu1> of block <mux> are unconnected in block <BloodTypeClassification>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <BloodAbnormalityDetector>.
+    Related source file is "D:\Phase1 Logic Project\Sources\bloodAbnormalityDetector.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <BloodAbnormalityDetector> synthesized.
+
+Synthesizing Unit <BloodPHAnalyzer>.
+    Related source file is "D:\Phase1 Logic Project\Sources\bloodPHAnalyzer.v".
+    Summary:
+	no macro.
+Unit <BloodPHAnalyzer> synthesized.
+
+Synthesizing Unit <decoder>.
+    Related source file is "D:\Phase1 Logic Project\Sources\decoder.v".
+    Summary:
+	no macro.
+Unit <decoder> synthesized.
+
+Synthesizing Unit <azm4>.
+    Related source file is "D:\Phase1 Logic Project\Sources\azm4.v".
+    Summary:
+	no macro.
+Unit <azm4> synthesized.
+
+Synthesizing Unit <BloodTypeClassification>.
+    Related source file is "D:\Phase1 Logic Project\Sources\bloodTypeClassification.v".
+WARNING:Xst:647 - Input <bloodType<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\Phase1 Logic Project\Sources\bloodTypeClassification.v" line 28: Output port <out> of the instance <mu1> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <bloodClass> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <BloodTypeClassification> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 1
+ 1-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <de2> is unconnected in block <d>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <de5> is unconnected in block <d>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <BloodAbnormalityDetector> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BloodAbnormalityDetector, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : BloodAbnormalityDetector.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1
+#      LUT4                        : 1
+# IO Buffers                       : 5
+#      IBUF                        : 4
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                    1  out of  63400     0%  
+    Number used as Logic:                 1  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      1
+   Number with an unused Flip Flop:       1  out of      1   100%  
+   Number with an unused LUT:             0  out of      1     0%  
+   Number of fully used LUT-FF pairs:     0  out of      1     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           8
+ Number of bonded IOBs:                   5  out of    210     2%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 0.934ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Delay:               0.934ns (Levels of Logic = 3)
+  Source:            bloodPH<2> (PAD)
+  Destination:       bloodAbnormality (PAD)
+
+  Data Path: bloodPH<2> to bloodAbnormality
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.556  bloodPH_2_IBUF (bloodPH_2_IBUF)
+     LUT4:I0->O            1   0.097   0.279  BloodPHAnalyzerUnit/abnormalityP1 (bloodAbnormality_OBUF)
+     OBUF:I->O                 0.000          bloodAbnormality_OBUF (bloodAbnormality)
+    ----------------------------------------
+    Total                      0.934ns (0.098ns logic, 0.836ns route)
+                                       (10.5% logic, 89.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.31 secs
+ 
+--> 
+
+Total memory usage is 4655572 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

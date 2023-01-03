@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Phase1 Logic Project/Phase1/LHSCTest_isim_beh.exe" -prj "D:/Phase1 Logic Project/Phase1/LHSCTest_beh.prj" "work.LHSCTest" "work.glbl" 
